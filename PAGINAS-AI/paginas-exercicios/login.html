@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar</title>
+    <link rel="shortcut icon" href="C:\Users\Meu\OneDrive\Documentos\site_acesso-informatica\FAVICON/favicon3.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <style>
+        body {
+            background-image: url('../SL\ \(39\).png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            color: #fff;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .conteiner {
+            display: block;
+            max-width: 450px;
+            height: 500px;
+            margin: auto;
+            border: 2px solid black;
+            color: black;
+            border-radius: 20px;
+            box-shadow: 1px 1px 4px 2px black;
+            background-color: #4b65fb23 ;
+        }
+        main h1 {
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+        main p {
+            background-color: #4b65fbea;
+        }
+        input {
+            background-color: transparent;
+            border: none;
+            width: 350px;
+            height: 30px;
+            border-radius: 20px;
+            color: #fff;
+            font-size: 20px;
+            transition-duration: 0.3s;
+        }
+        input:focus {
+            padding: 0;
+            outline: none;
+            color: #fff;
+            border-bottom: 2px solid black;
+        }
+        input:hover {
+            cursor: pointer;
+        }
+        #input3 {
+            border-radius: 20px;
+            border: 1px solid #0000;
+            background-color: #4b65fb86;
+            margin-top: 10px;
+        }
+        label {
+            text-transform: uppercase;
+            text-shadow: 1px 1px 2px 2px white;
+        }
+        footer {
+            background-color: #00127A;
+            padding: 5px;
+            color: rgba(255, 255, 255, 0.712);
+            margin-top: 80px;
+        }
+        strong {
+            color: white;
+        }
+        .inputs {
+            margin: 5px 0 15px 0;   
+        }
+        #p1 {
+            margin-top: 20px;
+            margin-bottom: 0;
+            padding: 1px 0 15px 0;
+        }
+        #p2 {
+            padding: 0 0 9px 0;
+            border-bottom-left-radius: 20px ;
+            border-bottom-right-radius: 20px ;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Acesso exclusivo!</h1>
+
+        <p>Só alunos da escola podem fazer os exercícios propostos final de módulo.</p>
+    </header>
+
+    <main>
+        <div class="conteiner">
+            <h1>Acesso</h1>
+
+            <label for="Aluno">Aluno(A):</label>
+            <div  class="inputs">
+                <input id="nome" type="text" placeholder="Aluno">
+            </div>
+
+            <label for="Curso">Curso:</label>
+            <div  class="inputs">
+                <input id="curso" type="text" placeholder="Curso">
+            </div>
+
+            <label id="label1" for="usuário">Usuário:</label>
+            <div class="inputs">
+                <input id="usuario" type="text" placeholder="Usuário" required>
+            </div>
+
+            <label id="label2" for="Password">Password:</label>
+            <div class="inputs">
+                <input id="senha" type="password" name=""  placeholder="Password" required>
+            </div>
+
+            <input onclick="validarLogin()" id="input3" type="submit" value="Submit">
+
+            <p id="p1">Já viu nosos<a href="#"> Cursos</a> ?</p>
+
+            <p id="p2">Fassa sua Matrícula agora, pelo nosso<a href="https://api.whatsapp.com/send/?phone=558187517424&text&type=phone_number&app_absent=0" target="_blank"> WhatsApp.</a></p>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Site criado por <strong>Joâo Paulo</strong>, para <strong>Acesso Informática</strong>.</p>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script >
+        var dadosLogin = {
+        usuarioo: "acessoinformatica10",
+        senha: 12345678
+    };
+
+    var cursos = {
+        seg_na_era_digital: "segurança na era digital",
+        internet: "internet",
+        powerPoint: "powerpoint",
+        excel: "excel",
+        word: "word",
+        windows10: "windows 10",
+        int_inform: "introdução a informática",
+        desenv_de_games: "desenvolvimento de games",
+        k_game_lab: "kodu game lab",
+        youtube: 'youtube'
+    };
+    
+    function validarLogin() {
+        var usuario = document.getElementById('usuario').value;
+        var senha = document.getElementById('senha').value;
+        var cursosinput = document.getElementById('curso').value;
+        var nome = document.getElementById('nome').value;
+
+        if (usuario == dadosLogin.usuarioo && senha == dadosLogin.senha &&  cursosinput == cursos.int_inform) {
+
+            window.location.href = "file:///C:/Users/Meu/OneDrive/Documentos/site_acesso-informatica/PAGINAS-AI/paginas-exercicios/introducao-info.html";
+
+       
+            alert('Bem vindo(A), ' + nome + " " + "a seu teste de final de módulo, espero que esteja preparado(A). Clique em 'OK' para iniciarmos. ");
+
+           
+
+
+        }else if (usuario == dadosLogin.usuarioo && senha == dadosLogin.senha &&  cursosinput == cursos.windows10) {
+            window.location.href = "file:///C:/Users/Meu/OneDrive/Documentos/site_acesso-informatica/PAGINAS-AI/paginas-exercicios/windows10.html";
+
+            alert('Bem vindo(A), ' + nome + " " + "a seu teste de final de módulo, espero que esteja preparado(A). Clique em 'OK' para iniciarmos. ");
+
+        }else if (usuario == dadosLogin.usuarioo && senha == dadosLogin.senha &&  cursosinput == cursos.word) {
+
+            window.location.href = "file:///C:/Users/Meu/OneDrive/Documentos/site_acesso-informatica/PAGINAS-AI/paginas-exercicios/word.html";
+
+            alert('Bem vindo(A), ' + nome + " " + "a seu teste de final de módulo, espero que esteja preparado(A). Clique em 'OK' para iniciarmos. ");
+
+        }else if (usuario == dadosLogin.usuarioo && senha == dadosLogin.senha &&  cursosinput == cursos.excel) {
+
+            window.location.href = "file:///C:/Users/Meu/OneDrive/Documentos/site_acesso-informatica/PAGINAS-AI/paginas-exercicios/excel.html";
+
+            alert('Bem vindo(A), ' + nome + " " + "a seu teste de final de módulo, espero que esteja preparado(A). Clique em 'OK' para iniciarmos. ");
+
+        }else if (usuario == dadosLogin.usuarioo && senha == dadosLogin.senha &&  cursosinput == cursos.powerPoint) {
+
+            window.location.href = "file:///C:/Users/Meu/OneDrive/Documentos/site_acesso-informatica/PAGINAS-AI/paginas-exercicios/powerpoint.html";
+
+            alert('Bem vindo(A), ' + nome + " " + "a seu teste de final de módulo, espero que esteja preparado(A). Clique em 'OK' para iniciarmos. ");
+
+        }else if (usuario == dadosLogin.usuarioo && senha == dadosLogin.senha &&  cursosinput == cursos.internet) {
+
+            window.location.href = "file:///C:/Users/Meu/OneDrive/Documentos/site_acesso-informatica/PAGINAS-AI/paginas-exercicios/internet.html";
+
+            alert('Bem vindo(A), ' + nome + " " + "a seu teste de final de módulo, espero que esteja preparado(A). Clique em 'OK' para iniciarmos. ");
+
+        }else if (usuario == dadosLogin.usuarioo && senha == dadosLogin.senha &&  cursosinput == cursos.seg_na_era_digital) {
+
+            window.location.href = "file:///C:/Users/Meu/OneDrive/Documentos/site_acesso-informatica/PAGINAS-AI/paginas-exercicios/seg-era-digital.html";
+
+            alert('Bem vindo(A), ' + nome + " " + "a seu teste de final de módulo, espero que esteja preparado(A). Clique em 'OK' para iniciarmos. ");
+
+        }else if (usuario == dadosLogin.usuarioo && senha == dadosLogin.senha &&  cursosinput == cursos.k_game_lab) {
+
+
+           alert('Bem vindo(A), ' + nome + " " + "a seu teste de final de módulo, espero que esteja preparado(A). Clique em 'OK' para iniciarmos. ");
+
+        }else if (usuario == dadosLogin.usuarioo && senha == dadosLogin.senha &&  cursosinput == cursos.desenv_de_games) {
+
+
+            alert('Bem vindo(A), ' + nome + " " + "a seu teste de final de módulo, espero que esteja preparado(A). Clique em 'OK' para iniciarmos. ");
+
+        }else if (usuario == dadosLogin.usuarioo && senha == dadosLogin.senha &&  cursosinput == cursos.youtube) {
+
+            window.location.href = "file:///C:/Users/Meu/OneDrive/Documentos/site_acesso-informatica/PAGINAS-AI/paginas-exercicios/youtube.html";
+
+            alert('Bem vindo(A), ' + nome + " " + "a seu teste de final de módulo, espero que esteja preparado(A). Clique em 'OK' para iniciarmos. ");
+
+        }else {
+            Toastify({
+            text: "Dados indefinidos!  ",
+            duration: 3000,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "right", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+              background: "#ef4444",
+              height: "30px",
+            },
+          }).showToast();
+        }
+        };
+   
+    </script>
+</body>
+</html>

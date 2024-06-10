@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercícios-introdução a informática</title>
+    <link rel="shortcut icon" href="../favicon3.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style-exercicios.css">
+</head>
+<body>
+
+    <header style="border-top: 10px solid aqua;">
+        <div>
+            <div>
+                <h1>Exercícios final de Módulo</h1>
+                <p id="p-header">Já que você provavelmente terminou esse módulo, vamos a prática do seu conhecimento desse curso básico.</p>
+            </div>
+
+            <ul>
+                <li>Responda todas as 10 perguntas referênte a Introdução a Informática, com calma e Atenção.</li>
+                <li>As questões são consideradas fáceis.</li>
+                <li>Em cada uma das 10 perguntas, á 4 alternativas e só uma certa, então muita atenção na qual irá marcar.</li>
+                <li>Irá passar o Aluno(A) quer acertar 7 ou mais, de 10 questões. Boa Sorte!</li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <form id="questionario">
+            <h1>Prova de Conhecimentos sobre Navegação Eficiente na Internet</h1>
+
+
+            <h3>1. Qual é a principal importância da internet nos dias de hoje?</h3>
+
+                <div class="alt">
+                    <input  type="radio" name="alternativas-1" value="1-a" data-resposta="c" class="alternativas" > <label for="opcoes">a) Fazer compras físicas</label>
+                </div> 
+
+                <div class="alt resCerta">
+                    <input onclick="fun1()" type="radio" name="alternativas-1" value="1-b" data-resposta="c" class="alternativas "><label for="opcoes"> b) Facilitar a comunicação e o acesso à informação</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-1" value="1-c" data-resposta="c" class="alternativas"> <label for="opcoes">c) Escrever cartas</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-1" value="1-d" data-resposta="c" class="alternativas"> <label for="opcoes">d) Reproduzir CDs</label>
+                </div>
+
+
+            <h3>2. Qual é uma maneira segura de buscar informações na internet?</h3>
+            
+                <div class="alt resCerta">
+                    <input onclick="fun1()" type="radio" name="alternativas-2" value="2-a" class="alternativas"><label for="opcoes"> a) Usando sites de fontes confiáveis</label>
+                </div>
+           
+
+                <div class="alt ">
+                    <input  type="radio" name="alternativas-2" value="2-b" class="alternativas "> <label for="opcoes">b) Acessando links de qualquer email recebido</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-2" value="2-c"class="alternativas"> <label for="opcoes">c) Visitando sites desconhecidos</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-2" value="2-d" class="alternativas"> <label for="opcoes">d) Compartilhando informações pessoais em fóruns públicos</label>
+                </div>
+
+
+            <h3>3. Para fazer uma busca eficiente no Google, você deve:</h3>
+
+                <div class="alt  resCerta">
+                    <input onclick="fun1()" type="radio" name="alternativas-3" value="3-a" class="alternativas"><label for="opcoes"> a) Digitar palavras-chave específicas e relevantes</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-3" value="3-b" class="alternativas"> <label for="opcoes">b) Escrever uma frase longa e detalhada</label>
+                </div>
+
+                <div class="alt">
+                    <input  type="radio" name="alternativas-3" value="3-c" class="alternativas "> <label for="opcoes">c) Clicar nos primeiros resultados sem ler as descrições</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-3" value="3-d" class="alternativas"> <label for="opcoes">d) Usar apenas uma palavra genérica</label>
+                </div>
+            
+
+            <h3>4. Qual é a melhor prática para navegar na internet de forma segura?</h3>
+
+                <div class="alt ">
+                    <input  type="radio" name="alternativas-4" value="4-a" class="alternativas "> <label for="opcoes">a) Desativar o antivírus</label>
+                </div>
+
+                <div class="alt resCerta">
+                    <input onclick="fun1()" type="radio" name="alternativas-4" value="4-b" class="alternativas"> <label for="opcoes">b) Usar senhas fortes e únicas para cada site</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-4" value="4-c" class="alternativas"> <label for="opcoes">c) Compartilhar suas senhas com amigos</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-4" value="4-d" class="alternativas"> <label for="opcoes">d) Clicar em todos os links recebidos por email</label>
+                </div>
+
+
+            <h3>5. Para instalar um programa de forma segura, você deve:</h3>
+
+                <div class="alt resCerta">
+                    <input onclick="fun1()" type="radio" name="alternativas-5" value="5-a" class="alternativas"> <label for="opcoes">a) Baixar de sites oficiais ou lojas de aplicativos confiáveis</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-5" value="5-b" class="alternativas"> <label for="opcoes">b) Usar qualquer site de download encontrado na internet</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-5" value="5-c" class="alternativas"> <label for="opcoes">c) Ignorar as permissões solicitadas pelo programa</label>
+                </div>
+
+                <div class="alt ">
+                    <input  type="radio" name="alternativas-5" value="5-d" class="alternativas "> <label for="opcoes">d) Desligar o firewall durante a instalação</label>
+                </div>
+
+
+            <h3>6. Qual é uma forma comum de entretenimento na internet?</h3>
+
+                <div class="alt resCerta">
+                    <input onclick="fun1()"  type="radio" name="alternativas-6" value="6-a" class="alternativas"> <label for="opcoes">a) Jogar videogames online</label>
+                </div>
+
+                <div class="alt ">
+                    <input type="radio" name="alternativas-6" value="6-b" class="alternativas "> <label for="opcoes">b) Escrever relatórios financeiros</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-6" value="6-c" class="alternativas"> <label for="opcoes">c) Ler livros físicos</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-6" value="6-d" class="alternativas"> <label for="opcoes">d) Fazer compras em lojas físicas</label>
+                </div>
+
+
+            <h3>7. O que você deve verificar antes de baixar um programa da internet?</h3>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-7" value="7-a" class="alternativas"> <label for="opcoes">a) A quantidade de cores do site</label>
+                </div>
+
+                <div class="alt resCerta">
+                    <input onclick="fun1()" type="radio" name="alternativas-7" value="7-b" class="alternativas "> <label for="opcoes">b) A reputação do site e as avaliações</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-7" value="7-c" class="alternativas"> <label for="opcoes">c) O tamanho do texto na página</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-7" value="7-d" class="alternativas"> <label for="opcoes">d) A velocidade da sua internet</label>
+                </div>
+
+
+            <h3>8. Como você pode proteger seus dados pessoais enquanto navega na internet?</h3>
+
+                <div class="alt ">
+                    <input  type="radio" name="alternativas-8" value="8-a" class="alternativas "> <label for="opcoes">a) Usando redes Wi-Fi públicas sem senha</label>
+                </div>
+
+                <div class="alt resCerta">
+                    <input onclick="fun1()" type="radio" name="alternativas-8" value="8-b" class="alternativas"> <label for="opcoes">b) Não compartilhando informações pessoais em sites não confiáveis</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-8" value="8-c" class="alternativas"> <label for="opcoes">c) Desativando o antivírus</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-8" value="8-d" class="alternativas"> <label for="opcoes">d) Baixando qualquer arquivo recebido por email</label>
+                </div>
+
+
+            <h3>9. Qual ferramenta do navegador é usada para armazenar senhas de forma segura?</h3>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-9" value="9-a" class="alternativas"> <label for="opcoes">a) Histórico</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-9" value="9-b" class="alternativas"> <label for="opcoes">b) Extensões</label>
+                </div>
+
+                <div class="alt resCerta">
+                    <input onclick="fun1()" type="radio" name="alternativas-9" value="9-c" class="alternativas resCerta"> <label for="opcoes">c) Gerenciador de senhas</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-9" value="9-d" class="alternativas"> <label for="opcoes">d) Configurações de impressão</label>
+                </div>
+
+
+            <h3>10. Qual é uma maneira de encontrar vídeos de entretenimento na internet?</h3>
+
+                <div class="alt resCerta">
+                    <input onclick="fun1()" type="radio" name="alternativas-10" value="10-a" class="alternativas"> <label for="opcoes">a) Visitando sites de compartilhamento de vídeos como YouTube</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-10" value="10-b" class="alternativas"> <label for="opcoes">b) Escrevendo um livro</label>
+                </div>
+
+                <div class="alt ">
+                    <input  type="radio" name="alternativas-10" value="10-c" class="alternativas "> <label for="opcoes">c) Usando programas de planilhas</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-10" value="10-d" class="alternativas"> <label for="opcoes">d) Acessando sites de banco</label>
+                </div>
+
+
+        </form>
+    </main>
+
+    <div id="minhaDiv">      
+    </div>
+
+    <div id="butoes">
+        <button onclick="desmarcarRadios()">Limpar formulário</button>
+        <button onclick="exibirResultado(total)">Finalizar Exercícios</button>
+    </div>
+
+    <footer>
+        <div>
+            <span>
+                <a href="https://www.instagram.com/acessoinformatica10?igsh=ZXMxd3YydTRvdTFj" target="_blank" >@acessoinformatica10</a>
+            </span>
+            <span>
+                <a href="https://www.instagram.com/joao_pauloo333?igsh=MXU4dnd6M3NldjF3OA==" target="_blank">@joao_pauloo333</a>
+            </span>
+        </div>
+    </footer>
+    
+
+
+    <script>
+
+        function fun1() {
+            let value = 1;
+               total += value;
+            
+        }
+
+        const resultado = document.querySelector    ("#result");
+       
+       const form = document.getElementById("questionario");
+       const inputs = document.querySelectorAll('.alternativas');
+
+       
+      let total = 0;
+
+      
+    
+        var div = document.getElementById("minhaDiv");
+        var resCertas = document.querySelectorAll(".resCerta")
+        var div = document.getElementById("minhaDiv");
+
+       function exibirResultado(total) {
+
+        
+            
+         
+        if (total <=6 && total > 0) {
+            
+            
+        div.style.display = "inline-block";
+        div.innerHTML = " Você acertou " + "<strong>" + total+ "</strong>" +" de <strong>10</strong> questões." + " Você foi reprovado(A), Tente prestar mais<strong> atenção</strong> nas aulas, para uma melhor nota!";
+        div.style.color = "red"
+        form.style.border = "2px solid red"
+        div.style.border = "2px solid red"
+
+           
+        resCertas.forEach(resCertas => {
+
+        resCertas.style.backgroun = "green";
+        resCertas.style.border = "2px solid green"
+        resCertas.style.color = "green"
+        })
+          
+        }else if(total >= 7) {
+            div.style.display = "inline-block";
+            div.innerHTML = " Você acertou " + "<strong>" + total+ "</strong>" +" de <strong>10</strong> questões." + " Você foi <strong>aprovado(A)</strong>, Continue assim e eleve seu conhecimento. Até a próxima!";
+            div.style.color = "green"
+            form.style.border = "2px solid green"
+            div.style.border = "2px solid green"
+
+            resCertas.forEach(resCertas => {
+
+            resCertas.style.backgroun = "green";
+            resCertas.style.border = "2px solid green"
+            resCertas.style.color = "green"
+            })
+
+        }else {
+            alert("responda todas as questões antes de finalizar a prova");
+        }
+        /* else if (total > 6 ) {
+            div.style.display = "inline-block";
+            div.innerHTML = " Você acertou " + "<strong>" + total+ "</strong>" +" de 10 questões." + " Você foi<strong> aprovado(A)</strong>, Continue assim e eleve seu conhecimento. Até a próxima!";
+            div.style.color = "green"
+            form.style.border = "2px solid green"
+            div.style.border = "2px solid green"
+            
+            
+
+        }else if (total == 0) {
+            alert("responda todas as questões")
+        }else {
+            alert("nnnnnnnn")
+            div.style.display = "inline-block";
+            div.innerHTML = " Você acertou " + "<strong>" + total+ "</strong>" +" de 10 questões." + " Você foi<strong> aprovado(A)</strong>, Continue assim e eleve seu conhecimento. Até a próxima!";
+            div.style.color = "green"
+            form.style.border = "2px solid green"
+            div.style.border = "2px solid green"
+            
+        }
+      */ 
+
+    }
+
+    
+    function desmarcarRadios() {
+            var radios = document.getElementsByClassName("alternativas");
+            for (var i = 0; i < radios.length; i++) {
+            radios[i].checked = false;
+            let value = 0;
+            total = value;
+            }
+            div.style.display = "none"
+            form.style.border = "none"
+            resCertas.forEach.color = "black"
+            resCertas.forEach (resCertas => {
+
+                resCertas.style.color = "black"
+                resCertas.style.border = "none"
+            })
+
+    }
+
+    
+    </script>
+</body>
+</html>

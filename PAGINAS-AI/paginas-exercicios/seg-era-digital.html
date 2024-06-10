@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercícios-introdução a informática</title>
+    <link rel="shortcut icon" href="../favicon3.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style-exercicios.css">
+</head>
+<body>
+
+    <header style="border-top: 10px solid #00127A;">
+        <div>
+            <div>
+                <h1>Exercícios final de Módulo</h1>
+                <p id="p-header">Já que você provavelmente terminou esse módulo, vamos a prática do seu conhecimento desse curso básico.</p>
+            </div>
+
+            <ul>
+                <li>Responda todas as 10 perguntas referênte a Introdução a Informática, com calma e Atenção.</li>
+                <li>As questões são consideradas fáceis.</li>
+                <li>Em cada uma das 10 perguntas, á 4 alternativas e só uma certa, então muita atenção na qual irá marcar.</li>
+                <li>Irá passar o Aluno(A) quer acertar 7 ou mais, de 10 questões. Boa Sorte!</li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <form id="questionario">
+            <h1>Prova de Conhecimentos sobre Segurança na Era Digital</h1>
+
+
+            <h3>1. Qual é uma prática essencial para viver seguro na internet?</h3>
+
+                <div class="alt">
+                    <input  type="radio" name="alternativas-1" value="1-a" data-resposta="c" class="alternativas" > <label for="opcoes">a) Usar senhas fracas e repetidas</label>
+                </div> 
+
+                <div class="alt ">
+                    <input  type="radio" name="alternativas-1" value="1-b" data-resposta="c" class="alternativas "><label for="opcoes">b) Compartilhar informações pessoais</label>
+                </div>
+
+                <div class="alt resCerta">
+                    <input onclick="fun1()" type="radio" name="alternativas-1" value="1-c" data-resposta="c" class="alternativas"> <label for="opcoes">c) Utilizar senhas fortes e únicas para cada conta</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-1" value="1-d" data-resposta="c" class="alternativas"> <label for="opcoes">d) Ignorar atualizações de software</label>
+                </div>
+
+
+            <h3>2. Qual é um dos ataques virtuais mais comuns?</h3>
+            
+                <div class="alt resCerta">
+                    <input onclick="fun1()" type="radio" name="alternativas-2" value="2-a" class="alternativas"><label for="opcoes"> a) Phishing</label>
+                </div>
+           
+
+                <div class="alt ">
+                    <input  type="radio" name="alternativas-2" value="2-b" class="alternativas "> <label for="opcoes">b) Impressores defeituosos</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-2" value="2-c"class="alternativas"> <label for="opcoes">c) Falhas de hardware</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-2" value="2-d" class="alternativas"> <label for="opcoes">d) Downloads de música</label>
+                </div>
+
+
+            <h3>3. Como você pode prevenir ataques de phishing?</h3>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-3" value="3-a" class="alternativas"><label for="opcoes"> a) Clicando em todos os links recebidos por email</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-3" value="3-b" class="alternativas"> <label for="opcoes">b) Ignorando atualizações de segurança</label>
+                </div>
+
+                <div class="alt resCerta">
+                    <input onclick="fun1()" type="radio" name="alternativas-3" value="3-c" class="alternativas "> <label for="opcoes">c) Verificando a autenticidade de emails e sites antes de fornecer informações pessoais</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-3" value="3-d" class="alternativas"> <label for="opcoes">d) Compartilhando senhas com amigos</label>
+                </div>
+            
+
+            <h3>4. O que é um código malicioso?</h3>
+
+                <div class="alt ">
+                    <input  type="radio" name="alternativas-4" value="4-a" class="alternativas "> <label for="opcoes">a) Um programa que ajuda na navegação segura</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-4" value="4-b" class="alternativas"> <label for="opcoes">b) Um software que melhora a velocidade da internet</label>
+                </div>
+
+                <div class="alt resCerta">
+                    <input onclick="fun1()" type="radio" name="alternativas-4" value="4-c" class="alternativas"> <label for="opcoes">c) Um programa criado para danificar ou obter acesso não autorizado a um sistema</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-4" value="4-d" class="alternativas"> <label for="opcoes">d) Um arquivo de música</label>
+                </div>
+
+
+            <h3>5. Qual é uma medida preventiva contra códigos maliciosos?</h3>
+
+                <div class="alt resCerta">
+                    <input onclick="fun1()" type="radio" name="alternativas-5" value="5-a" class="alternativas"> <label for="opcoes">a) Baixar software apenas de sites confiáveis</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-5" value="5-b" class="alternativas"> <label for="opcoes">b) Desativar o firewall</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-5" value="5-c" class="alternativas"> <label for="opcoes">c) Usar a mesma senha para todas as contas</label>
+                </div>
+
+                <div class="alt ">
+                    <input  type="radio" name="alternativas-5" value="5-d" class="alternativas "> <label for="opcoes">d) Compartilhar dispositivos de armazenamento com desconhecidos</label>
+                </div>
+
+
+            <h3>6. O que é spam?</h3>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-6" value="6-a" class="alternativas"> <label for="opcoes">a) Uma técnica de segurança avançada</label>
+                </div>
+
+                <div class="alt resCerta">
+                    <input onclick="fun1()" type="radio" name="alternativas-6" value="6-b" class="alternativas "> <label for="opcoes">b) Emails não solicitados e frequentemente indesejados</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-6" value="6-c" class="alternativas"> <label for="opcoes">c) Um tipo de software antivírus</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-6" value="6-d" class="alternativas"> <label for="opcoes">d) Um modo de navegar na internet</label>
+                </div>
+
+
+            <h3>7. Como você pode reduzir o risco de receber spam?</h3>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-7" value="7-a" class="alternativas"> <label for="opcoes">a) Inscrevendo-se em qualquer lista de emails</label>
+                </div>
+
+                <div class="alt resCerta">
+                    <input onclick="fun1()" type="radio" name="alternativas-7" value="7-b" class="alternativas "> <label for="opcoes">b) Usando filtros de spam em seu serviço de email</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-7" value="7-c" class="alternativas"> <label for="opcoes">c) Compartilhando seu endereço de email em sites públicos</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-7" value="7-d" class="alternativas"> <label for="opcoes">d) Desativando o filtro de spam</label>
+                </div>
+
+
+            <h3>8. Qual é um mecanismo comum de segurança digital?</h3>
+
+                <div class="alt resCerta">
+                    <input onclick="fun1()" type="radio" name="alternativas-8" value="8-a" class="alternativas "> <label for="opcoes">a) Protocolos de encriptação</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-8" value="8-b" class="alternativas"> <label for="opcoes">b) Usar software desatualizado</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-8" value="8-c" class="alternativas"> <label for="opcoes">c) Compartilhar senhas</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-8" value="8-d" class="alternativas"> <label for="opcoes">d) Ignorar mensagens de segurança</label>
+                </div>
+
+
+            <h3>9. Qual é uma técnica de defesa do dispositivo?</h3>
+
+                <div class="alt resCerta">
+                    <input onclick="fun1()" type="radio" name="alternativas-9" value="9-a" class="alternativas"> <label for="opcoes">a) Manter o software de segurança atualizado</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-9" value="9-b" class="alternativas"> <label for="opcoes">b) Desativar o antivírus</label>
+                </div>
+
+                <div class="alt ">
+                    <input  type="radio" name="alternativas-9" value="9-c" class="alternativas resCerta"> <label for="opcoes">c) Evitar backup de dados</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-9" value="9-d" class="alternativas"> <label for="opcoes">d) Compartilhar dispositivos de armazenamento com desconhecidos</label>
+                </div>
+
+
+            <h3>10. Qual é um aplicativo interessante para melhorar a segurança digital?</h3>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-10" value="10-a" class="alternativas"> <label for="opcoes">a) Um aplicativo de mídia social</label>
+                </div>
+
+                <div class="alt resCerta">
+                    <input onclick="fun1()" type="radio" name="alternativas-10" value="10-b" class="alternativas"> <label for="opcoes">b) Um gerenciador de senhas</label>
+                </div>
+
+                <div class="alt ">
+                    <input  type="radio" name="alternativas-10" value="10-c" class="alternativas "> <label for="opcoes">c) Um reprodutor de música</label>
+                </div>
+
+                <div class="alt">
+                    <input type="radio" name="alternativas-10" value="10-d" class="alternativas"> <label for="opcoes">d) Um aplicativo de edição de fotos</label>
+                </div>
+
+
+        </form>
+    </main>
+
+    <div id="minhaDiv">      
+    </div>
+
+    <div id="butoes">
+        <button onclick="desmarcarRadios()">Limpar formulário</button>
+        <button onclick="exibirResultado(total)">Finalizar Exercícios</button>
+    </div>
+
+    <footer>
+        <div>
+            <span>
+                <a href="https://www.instagram.com/acessoinformatica10?igsh=ZXMxd3YydTRvdTFj" target="_blank" >@acessoinformatica10</a>
+            </span>
+            <span>
+                <a href="https://www.instagram.com/joao_pauloo333?igsh=MXU4dnd6M3NldjF3OA==" target="_blank">@joao_pauloo333</a>
+            </span>
+        </div>
+    </footer>
+    
+
+
+    <script>
+
+        function fun1() {
+            let value = 1;
+               total += value;
+            
+        }
+
+        const resultado = document.querySelector    ("#result");
+       
+       const form = document.getElementById("questionario");
+       const inputs = document.querySelectorAll('.alternativas');
+
+       
+      let total = 0;
+
+      
+    
+        var div = document.getElementById("minhaDiv");
+        var resCertas = document.querySelectorAll(".resCerta")
+        var div = document.getElementById("minhaDiv");
+
+       function exibirResultado(total) {
+
+        
+            
+         
+        if (total <=6 && total > 0) {
+            
+            
+        div.style.display = "inline-block";
+        div.innerHTML = " Você acertou " + "<strong>" + total+ "</strong>" +" de <strong>10</strong> questões." + " Você foi reprovado(A), Tente prestar mais<strong> atenção</strong> nas aulas, para uma melhor nota!";
+        div.style.color = "red"
+        form.style.border = "2px solid red"
+        div.style.border = "2px solid red"
+
+           
+        resCertas.forEach(resCertas => {
+
+        resCertas.style.backgroun = "green";
+        resCertas.style.border = "2px solid green"
+        resCertas.style.color = "green"
+        })
+          
+        }else if(total >= 7) {
+            div.style.display = "inline-block";
+            div.innerHTML = " Você acertou " + "<strong>" + total+ "</strong>" +" de <strong>10</strong> questões." + " Você foi <strong>aprovado(A)</strong>, Continue assim e eleve seu conhecimento. Até a próxima!";
+            div.style.color = "green"
+            form.style.border = "2px solid green"
+            div.style.border = "2px solid green"
+
+            resCertas.forEach(resCertas => {
+
+            resCertas.style.backgroun = "green";
+            resCertas.style.border = "2px solid green"
+            resCertas.style.color = "green"
+            })
+
+        }else {
+            alert("responda todas as questões antes de finalizar a prova");
+        }
+        /* else if (total > 6 ) {
+            div.style.display = "inline-block";
+            div.innerHTML = " Você acertou " + "<strong>" + total+ "</strong>" +" de 10 questões." + " Você foi<strong> aprovado(A)</strong>, Continue assim e eleve seu conhecimento. Até a próxima!";
+            div.style.color = "green"
+            form.style.border = "2px solid green"
+            div.style.border = "2px solid green"
+            
+            
+
+        }else if (total == 0) {
+            alert("responda todas as questões")
+        }else {
+            alert("nnnnnnnn")
+            div.style.display = "inline-block";
+            div.innerHTML = " Você acertou " + "<strong>" + total+ "</strong>" +" de 10 questões." + " Você foi<strong> aprovado(A)</strong>, Continue assim e eleve seu conhecimento. Até a próxima!";
+            div.style.color = "green"
+            form.style.border = "2px solid green"
+            div.style.border = "2px solid green"
+            
+        }
+      */ 
+
+    }
+
+    
+    function desmarcarRadios() {
+            var radios = document.getElementsByClassName("alternativas");
+            for (var i = 0; i < radios.length; i++) {
+            radios[i].checked = false;
+            let value = 0;
+            total = value;
+            }
+            div.style.display = "none"
+            form.style.border = "none"
+            resCertas.forEach.color = "black"
+            resCertas.forEach (resCertas => {
+
+                resCertas.style.color = "black"
+                resCertas.style.border = "none"
+            })
+
+    }
+
+    
+    </script>
+</body>
+</html>

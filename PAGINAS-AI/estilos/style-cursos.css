@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+        :root {
+            --cor1: #4B66FB;
+            --cor2: #0025FA;
+            --cor3: #000fff;
+            --cor4: #00127A;
+            --cor5: #161F30;
+
+        --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+        --fonte-destaque:  "Bebas Neue", sans-serif;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-image: linear-gradient(to right, var(--cor1), var(--cor2), var(--cor3) );
+        }
+        header {
+            width: 90%;
+            background-color: aliceblue;
+            margin: auto;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 20px;
+            box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.534);
+        }
+        header ul {
+            list-style-position: inside;
+        }
+        header ul > li {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        li a {
+            text-decoration: none;
+            color: var(--cor1);
+        }
+        header h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        header strong {
+            color: var(--cor1);
+        }
+        #contato {
+            background-color: aliceblue;
+            max-width: 500px;
+            margin: auto;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 20px;
+            box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.534);
+        }
+        #contato p {
+            margin-bottom: 30px;
+            font-family: var(--fonte-padrao);
+        }
+        #contato a {
+            text-decoration: none;
+            background-color: rgba(0, 128, 0, 0.753);
+            color: white;
+            padding: 10px 15px 10px 15px;
+            border-radius: 20px;
+            font-family: var(--fonte-padrao);
+        }
+        #contato a:hover {
+            background-color: white;
+            color: rgba(0, 128, 0, 0.753) ;
+            border: 1px solid rgba(0, 128, 0, 0.753);
+            transition-duration: 0.3s;
+        }
+        main section {
+            display: flex;
+            margin-top: 100px;
+            justify-self: center;
+        }
+        .trilha img {
+            width: 250px;
+            height: 250px;
+            border-radius: 10px;
+        }
+        .trilha button {
+            padding: 5px;
+            border: none;
+            background-color: var(--cor1);
+            color: white;
+            border-radius: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .trilha {
+            background-color: aliceblue;
+            padding: 10px;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: normal;
+            box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.493);
+            border-radius: 5px;
+        }
+        .trilha strong {
+            text-transform: uppercase;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .tabela {
+            background-color: aliceblue;
+            width: 0;
+            height: 0;
+            z-index: 1;
+            overflow: hidden;
+            transition: width 0.3s;
+            border-radius: 5px;
+        }
+        
+        main {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           align-items: start;
+           margin-bottom: 100px;
+        }
+        
+        .h1 {
+            text-align: center;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 50px;
+            margin-bottom: 100px;
+        }
+        h2 {
+            color: var(--cor5);
+        }
+        figcaption {
+            font-size: 12px;
+        }
+        .x {
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+            font-family: var(--fonte-padrao);
+            width: 40px;
+            border: none;
+            transition-duration: 0.5s;
+        }
+        .tabela-texto h2 {
+            font-family: var(--fonte-padrao);
+            padding: 5px;
+        }
+        .tabela-texto p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 14px;
+            padding: 5px;
+        }
+        #administracao td {
+            font-size: 13px;
+        }
+        table {
+            font-family: var(--fonte-padrao);
+            border-collapse: collapse;
+            text-align: center;
+        }
+        .conteiner-tb {
+            display: flex;
+            justify-content: center;
+        }
+        caption {
+            background-color: rgb(59, 59, 228);
+            color: white;
+            font-weight: bold;
+            padding: 5px;
+        }
+        th {
+            background-color: rgb(51, 50, 50);
+            color: white;
+        }
+        td {
+            font-size: 18px;
+            border: 1px solid black;
+            width: 200px;
+            padding: 5px;
+        }
+        .scrollLeft {
+            animation: lll 1.5s;
+        }
+        .scrollRight {
+            animation: rrr 1.5s;
+        }
+        @keyframes lll {
+            from {
+              translate: 10vw 0;
+            }
+        
+            to {
+              translate: 0 0;
+            }
+          }
+          @keyframes rrr {
+            from {
+              translate: -10vw 0;
+            }
+        
+            to {
+              translate: 0 0;
+            }
+          }
+        footer {
+            padding: 10px;
+            background-color: var(--cor4);
+            color: rgba(255, 255, 255, 0.712);
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        footer strong {
+            color: white;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.8em;
+           }
+           a:hover {
+            text-decoration: underline;
+            color: #0025FA;
+            transition-duration: 0.3s;
+           }
+        @media (max-width: 1150px) {
+            .trilha img {
+                width: 200px;
+                height: 200px;
+            }
+            main section {
+                display: inline;
+            }
+        }
+        @media (max-width: 850px) {
+            
+        }
+        @media (max-width: 700px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 20px;
+            }   
+
+        }
+        @media (max-width: 550px) {
+            #contato {
+                max-width: 400px;
+                font-size: 14px;
+            }
+            header ul {
+                width: 70%;
+                font-size: 14px;
+            }
+            header h1 {
+                font-size: 20px;
+            }
+            header ul >li {
+                font-size: 14px;
+            }
+        }

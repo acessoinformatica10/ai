@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios-ai</title>
+    <link rel="shortcut icon" href="../FAVICON/favicon3.ico" type="image/x-icon">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        var secoes = document.querySelectorAll(".minha-secao");
+        var divs = document.querySelectorAll(".menu");
+
+        secoes.forEach(function(secao, index) {
+            secao.addEventListener("click", function() {
+           
+                if (divs[index].style.width == "100%" ) {
+
+                    divs[index].style.width = "0";
+                    divs[index].style.height = "0";
+                }else {
+
+                    divs[index].style.width = "100%";
+                    divs[index].style.height = "800px";
+                    
+                }
+
+            });
+        });
+        });
+
+    </script>
+
+    <style>
+        :root {
+            --cor1: #4B66FB;
+            --cor2: #0025FA;
+            --cor3: #000fff;
+            --cor4: #00127A;
+            --cor5: #161F30;
+
+            --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+            --fonte-baixada: 'tango', sans-serif;
+            --fonte-destaque:  "Bebas Neue", sans-serif;
+        }
+        body {
+            background-color: black;
+            color: #fff;
+        }
+        header {
+            display: flex;
+            text-align: center;
+            font-family: var(--fonte-padrao);
+            border-bottom: 1px solid var(--cor2);
+        }
+        #txtheader {
+            margin: auto;
+        }
+        #logo {
+            float: right;
+        }
+        p {
+            text-align: center;
+            margin-top: 30px;
+            font-family: var(--fonte-padrao);
+        }
+        section {
+            background-color: var(--cor2);
+            padding: 20px;
+            max-width: 500px;
+            border-radius: 30px;
+            margin: auto;
+            margin-top: 10px;
+        }
+        @media (max-width:500px) {
+            section {
+                max-width: 400px;
+            }
+            section h1 {
+                font-size: 16px;
+            }
+        }
+        section h1 {
+            font-family: var(--fonte-baixada);
+            text-align: center;
+        }
+        .menu {
+            height: 0px;
+            width: 0px;
+            background-color: var(--cor1);
+            color: white;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            overflow: hidden;
+            transition: width 0.5s, height 0.5s;
+            margin: auto;
+            margin-top: 5px;
+            border-radius: 10px;
+        }
+        section:hover {
+            box-shadow: 2px 2px 4px 2px white;
+        }
+        #sect1 {
+            margin-top: 100px;
+        }
+        #modulo3-2 {
+            background-color: rgb(111, 0, 255);
+            text-align: center;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #mod3-2 {
+            border: 2px solid rgb(111, 0, 255);
+        }
+        #modulo3-1 {
+            background-color: rgb(19, 187, 19);
+            text-align: center;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #mod3-1 {
+            border: 2px solid rgb(19, 187, 19);
+        }
+        #modulo4-1 {
+            background-color: rgb(209, 47, 101);
+            text-align: center;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #mod4-1 {
+            border: 2px solid rgb(209, 47, 101);
+        }
+        .modulos {
+            width: 100px;
+            height: 200px;
+            background-color: white;
+            border-radius: 10px;
+            border: 2px solid rgb(105, 26, 105);
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+        }
+       
+        #mod11 {
+            border: 2px solid rgb(105, 26, 105);
+        }
+        #mod2 {
+            border: 2px solid var(--cor2);
+        }
+        #mod3 {
+            border: 2px solid var(--cor3);
+        }
+        #mod4 {
+            border: 2px solid rgba(0, 128, 0, 0.493);
+        }
+        #mod5 {
+            border: 2px solid orangered;
+        }
+        #mod6 {
+            border: 2px solid aqua;
+        }
+        #mod7 {
+            border: 2px solid var(--cor1);
+        }
+        #modulo1 {
+            background-color: rgb(105, 26, 105);
+            text-align: center;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #modulo2 {
+            background-color: var(--cor2);
+            text-align: center;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #modulo3  {
+            background-color: var(--cor3);
+            text-align: center;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #modulo4  {
+            background-color: rgba(0, 128, 0, 0.493);
+            text-align: center;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #modulo5  {
+            background-color: orangered;
+            text-align: center;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #modulo6 {
+            background-color: aqua;
+            text-align: center;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #modulo7{
+            background-color: var(--cor1);
+            text-align: center;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .modulos a {
+            text-decoration: none;
+            color: white;
+            font-family: var(--fonte-destaque);
+            font-size: 15px;
+            text-align: center;
+            margin-top: 10px;
+           
+        }
+        footer {
+            text-align: center;
+            background-color: var(--cor4);
+            color: rgba(255, 255, 255, 0.473);
+            margin: 100px -6px -15px -6px;
+        }
+        footer p {
+            padding: 10px;
+            font-size: 0.8em;
+        }
+        footer strong {
+            color: white;
+        }
+        a {
+        color: white;
+        text-decoration: none;
+       }
+       a:hover {
+        text-decoration: underline;
+        color: #0025FA;
+        transition-duration: 0.3s;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="txtheader">
+            <h1>Vamos testar o que você aprendeu ? </h1>
+            <h2>Então vamos lá!</h2>
+
+        </div>
+
+        <div id="logo">
+            <img  src="../LOGOTIPO/logo-detalhe-pequenablack.png" alt="logo acesso informática">
+        </div>
+    </header>
+
+    <p>Selecione seu módulo na trinha correspondente para iniciar seu teste:</p>
+
+    <section class="minha-secao"  id="sect1">
+        <h1>Como ter um canal de secesso: You Tube na prática</h1>
+    </section>
+
+    <div class="menu conteiner-menu" >
+       <div  id="mod4-1" class="modulos">
+            <div >
+                <div id="modulo4-1"><a href="file:///C:/Users/Meu/OneDrive/Documentos/site_acesso-informatica/PAGINAS-AI/paginas-exercicios/login.html" target="_blank">You Tube-como ter um canal de secesso</a></div>
+                <p><a style="color: black;" class="links" href="file:///C:/Users/Meu/OneDrive/Documentos/site_acesso-informatica/PAGINAS-AI/paginas-exercicios/login.html" target="_blank">Exercício do módulo de You Tube na prática</a></p>
+        </div>
+       </div>
+    </div>
+
+
+
+    <section class="minha-secao"  id="sect2">
+        <h1>Concurso de desenho COVID</h1>
+    </section>
+
+    <div class="menu conteiner-menu">
+        <div  id="mod3-1" class="modulos">
+            <div >
+                <div id="modulo3-1"><a href="file:///C:/Users/Meu/OneDrive/Documentos/site_acesso-informatica/PAGINAS-AI/paginas-exercicios/login.html" target="_blank">Kodu Game Lab</a></div>
+                <p><a style="color: black;" class="links" href="file:///C:/Users/Meu/OneDrive/Documentos/site_acesso-informatica/PAGINAS-AI/paginas-exercicios/login.html" target="_blank">Exercício do módulo de Kodu Game Lab</a></p>
+        </div>
+       </div>
+
+        <div  id="mod3-2" class="modulos">
+            <div >
+                <div id="modulo3-2"><a href="file:///C:/Users/Meu/OneDrive/Documentos/site_acesso-informatica/PAGINAS-AI/paginas-exercicios/login.html" target="_blank">Desenvolvimento de Games</a></div>
+                <p><a style="color: black;" class="links" href="file:///C:/Users/Meu/OneDrive/Documentos/site_acesso-informatica/PAGINAS-AI/paginas-exercicios/login.html" target="_blank">Exercício do módulo de Desenvolviment. de Games</a></p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <section class="minha-secao"  id="sect3">
+        <h1>Marketing Digital</h1>
+    </section>
+
+    <div class="menu conteiner-menu">
+        
+    </div>
+
+
+
+    <section class="minha-secao"  id="sect4">
+        <h1>Tecnologia fundamental</h1>
+    </section>
+
+    <div class="menu conteiner-menu">
+        <div id="mod1" class="modulos">
+            <div >
+                <div id="modulo1"><a href="file:///C:/Users/Meu/OneDrive/Documentos/site_acesso-informatica/PAGINAS-AI/paginas-exercicios/login.html" target="_blank">Introdução a informática</a></div>
+                <p><a style="color: black;" class="links" href="file:///C:/Users/Meu/OneDrive/Documentos/site_acesso-informatica/PAGINAS-AI/paginas-exercicios/login.html" target="_blank">Exercício do módulo de Introdução a informática</a></p>
+            </div>
+        </div>
+
+        <div id="mod2" class="modulos">
+            <div >
+                <div id="modulo2"><a href="file:///C:/Users/Meu/OneDrive/Documentos/site_acesso-informatica/PAGINAS-AI/paginas-exercicios/login.html" target="_blank">Windows 10 -  Essencial</a></div>
+                <p><a style="color: black;" class="links" href="file:///C:/Users/Meu/OneDrive/Documentos/site_acesso-informatica/PAGINAS-AI/paginas-exercicios/login.html" target="_blank">Exercício do módulo de Windows 10 - Essencial</a></p>
+            </div>
+        </div>
+
+        <div id="mod3" class="modulos">
+            <div >
+                <div id="modulo3"><a href="file:///C:/Users/Meu/OneDrive/Documentos/site_acesso-informatica/PAGINAS-AI/paginas-exercicios/login.html" target="_blank">Word-Essencial</a></div>
+                <p><a style="color: black;" class="links" href="file:///C:/Users/Meu/OneDrive/Documentos/site_acesso-informatica/PAGINAS-AI/paginas-exercicios/login.html" target="_blank">Exercício do módulo de Word-Essencial</a></p>
+            </div>
+        </div>
+
+        <div id="mod4" class="modulos">
+            <div >
+                <div id="modulo4"><a href="file:///C:/Users/Meu/OneDrive/Documentos/site_acesso-informatica/PAGINAS-AI/paginas-exercicios/login.html" target="_blank">Excel-Essencial</a></div>
+                <p><a style="color: black;" class="links" href="file:///C:/Users/Meu/OneDrive/Documentos/site_acesso-informatica/PAGINAS-AI/paginas-exercicios/login.html" target="_blank">Exercício do módulo de Excel-Essencial</a></p>
+            </div>
+        </div>
+
+        <div id="mod5" class="modulos">
+            <div>
+                <div  id="modulo5"><a href="file:///C:/Users/Meu/OneDrive/Documentos/site_acesso-informatica/PAGINAS-AI/paginas-exercicios/login.html" target="_blank">PowerPoint-Essencial</a></div>
+                <p><a style="color: black;" class="links" href="file:///C:/Users/Meu/OneDrive/Documentos/site_acesso-informatica/PAGINAS-AI/paginas-exercicios/login.html" target="_blank">Exercício do módulo de PowerPoint - Essencial</a></p>
+            </div>
+        </div>
+
+        <div id="mod6" class="modulos">
+            <div >
+                <div id="modulo6"><a href="file:///C:/Users/Meu/OneDrive/Documentos/site_acesso-informatica/PAGINAS-AI/paginas-exercicios/login.html" target="_blank">Internet</a></div>
+                <p><a style="color: black;" class="links" href="file:///C:/Users/Meu/OneDrive/Documentos/site_acesso-informatica/PAGINAS-AI/paginas-exercicios/login.html" target="_blank">Exercício do módulo de Internet- Navegando </a></p>
+            </div>
+        </div>
+
+        <div id="mod7" class="modulos">
+            <div >
+                <div id="modulo7"><a href="file:///C:/Users/Meu/OneDrive/Documentos/site_acesso-informatica/PAGINAS-AI/paginas-exercicios/login.html" target="_blank">Segurança na Era Digital</a></div>
+                <p><a style="color: black;" class="links" href="file:///C:/Users/Meu/OneDrive/Documentos/site_acesso-informatica/PAGINAS-AI/paginas-exercicios/login.html" target="_blank">Exercício do módulo de Segurança na Era Digital</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Site criado por <strong><a href="https://www.instagram.com/joao_pauloo333?igsh=MXU4dnd6M3NldjF3OA==" target="_blank">João Paulo</a></strong>, para a <strong> <a href="https://www.instagram.com/acessoinformatica10?igsh=ZXMxd3YydTRvdTFj" target="_blank">Acesso Informática</a></strong>.</p>
+    </footer>
+</body>
+</html>
