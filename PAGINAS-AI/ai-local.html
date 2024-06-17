@@ -10,7 +10,6 @@
             margin: 0;
             padding: 0;
         }
-       
 
         header {
             background-color: #0000ff ;
@@ -72,11 +71,8 @@
             color: white;
         }
         .imgs {
-            border-radius: 5px;
-            width: 200px;
-            height: 200px;
-            position: absolute;
-            bottom: 0;
+            width: 100%;
+            height: 300px;
         }
         #conteiner-imgs {
             background: blue url("../imagens/frente-acesso.jpeg") center no-repeat fixed;
@@ -93,6 +89,16 @@
         }
         #img2 {
            right: 0;
+        }
+        #album {
+            text-align: center;
+            border: 1px solid blue ;
+        }
+        @media (min-width: 600px) {
+            #album {
+                max-width: 500px;
+                margin: auto;
+            }
         }
         a {
             color: white;
@@ -137,9 +143,13 @@
         </div>
 
         <div id="conteiner-imgs">
-            <img class="imgs" id="img1" src="../imagens/porta-acesso600px.jpeg" alt="">
-            <img class="imgs" id="img2" src="../imagens/interior-acesso600px.jpeg" alt="">
 
+        </div>
+
+        <div id="album">
+            <img class="imgs" id="img1" src="../imagens/porta-acesso600px.jpeg" alt="Imagem da Porta da Acessso">
+            <img class="imgs" id="img2" src="../imagens/interior-acesso600px.jpeg" alt="Interior da Acesso">
+            <img class="imgs" id="img3" src="../imagens/acesso.jpeg" alt="Sala da Acesso">
         </div>
 
     </main>

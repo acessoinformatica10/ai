@@ -178,6 +178,12 @@ div.sobre div > p {
     #imginsta {
         max-width: 300px;
     }
+    header {
+        background: var(--cor3) url("../imagens/acesso-escura.jpeg") no-repeat fixed ;
+        background-position: left  ;
+        background-size: cover;
+        height: 750px;
+    }
 }
 div.sobre > div {
    background-color: white;
