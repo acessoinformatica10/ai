@@ -25,6 +25,16 @@
         </div>
     </header>
 
+    <section id="nome">
+        <h1>Digite seu nome.</h1>
+        <input placeholder="Nome com 3 digitos ou mais" id="input-text" type="text">
+        <button id="ok">OK</button>
+
+        <div id="areatext">
+            
+        </div>
+    </section>
+
     <main>
         <form id="questionario">
             <h1>Prova de Conhecimentos Básicos sobre Windows 10</h1>
@@ -224,12 +234,18 @@
         </form>
     </main>
 
-    <div id="minhaDiv">      
+    <div id="minhaDiv">   
+        <aside>
+            <h1>Código do Instrutor</h1>
+            <button id="x">X</button>
+            <input id="input" type="number">
+            <button id="bt">Finalizar</button>
+        </aside>      
     </div>
 
     <div id="butoes">
         <button onclick="desmarcarRadios()">Limpar formulário</button>
-        <button onclick="exibirResultado(total)">Finalizar Exercícios</button>
+        <button id="finalizar">Finalizar Exercícios</button>
     </div>
 
     <footer>
@@ -245,110 +261,7 @@
     
 
 
-    <script>
-
-        function fun1() {
-            let value = 1;
-               total += value;
-            
-        }
-
-        const resultado = document.querySelector    ("#result");
-       
-       const form = document.getElementById("questionario");
-       const inputs = document.querySelectorAll('.alternativas');
-
-       
-      let total = 0;
-
-      
-    
-        var div = document.getElementById("minhaDiv");
-        var resCertas = document.querySelectorAll(".resCerta")
-        var div = document.getElementById("minhaDiv");
-
-       function exibirResultado(total) {
-
-        
-            
-         
-        if (total <=6 && total > 0) {
-            
-            
-        div.style.display = "inline-block";
-        div.innerHTML = " Você acertou " + "<strong>" + total+ "</strong>" +" de <strong>10</strong> questões." + " Você foi reprovado(A), Tente prestar mais<strong> atenção</strong> nas aulas, para uma melhor nota!";
-        div.style.color = "red"
-        form.style.border = "2px solid red"
-        div.style.border = "2px solid red"
-
-           
-        resCertas.forEach(resCertas => {
-
-        resCertas.style.backgroun = "green";
-        resCertas.style.border = "2px solid green"
-        resCertas.style.color = "green"
-        })
-          
-        }else if(total >= 7) {
-            div.style.display = "inline-block";
-            div.innerHTML = " Você acertou " + "<strong>" + total+ "</strong>" +" de <strong>10</strong> questões." + " Você foi <strong>aprovado(A)</strong>, Continue assim e eleve seu conhecimento. Até a próxima!";
-            div.style.color = "green"
-            form.style.border = "2px solid green"
-            div.style.border = "2px solid green"
-
-            resCertas.forEach(resCertas => {
-
-            resCertas.style.backgroun = "green";
-            resCertas.style.border = "2px solid green"
-            resCertas.style.color = "green"
-            })
-
-        }else {
-            alert("responda todas as questões antes de finalizar a prova");
-        }
-        /* else if (total > 6 ) {
-            div.style.display = "inline-block";
-            div.innerHTML = " Você acertou " + "<strong>" + total+ "</strong>" +" de 10 questões." + " Você foi<strong> aprovado(A)</strong>, Continue assim e eleve seu conhecimento. Até a próxima!";
-            div.style.color = "green"
-            form.style.border = "2px solid green"
-            div.style.border = "2px solid green"
-            
-            
-
-        }else if (total == 0) {
-            alert("responda todas as questões")
-        }else {
-            alert("nnnnnnnn")
-            div.style.display = "inline-block";
-            div.innerHTML = " Você acertou " + "<strong>" + total+ "</strong>" +" de 10 questões." + " Você foi<strong> aprovado(A)</strong>, Continue assim e eleve seu conhecimento. Até a próxima!";
-            div.style.color = "green"
-            form.style.border = "2px solid green"
-            div.style.border = "2px solid green"
-            
-        }
-      */ 
-
-    }
-
-    
-    function desmarcarRadios() {
-            var radios = document.getElementsByClassName("alternativas");
-            for (var i = 0; i < radios.length; i++) {
-            radios[i].checked = false;
-            let value = 0;
-            total = value;
-            }
-            div.style.display = "none"
-            form.style.border = "none"
-            resCertas.forEach.color = "black"
-            resCertas.forEach (resCertas => {
-
-                resCertas.style.color = "black"
-                resCertas.style.border = "none"
-            })
-
-    }
-
+    <script src="js/script.js">
     
     </script>
 </body>
