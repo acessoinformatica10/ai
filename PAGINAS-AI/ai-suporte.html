@@ -11,21 +11,35 @@
         display: inline-flex;
         width: 100%;
        }
+
        * {
         margin: 0;
         padding: 0;
        }
+
+       main {
+        width: 100%;
+        display: flex;
+       }
+
        .column {
         flex: 1;
         padding: 20px;
        }
-       .column:nth-child(1) {
-        background-color: #4B66FB ;
-        color: white;
+
+       .column1 {
+        background-color: #4B66FB  ;
+        color: rgba(255, 255, 255, 0.733);
        }
-       .column:nth-child(2) {
+
+       .column2 {
         text-align: center;
        }
+
+       .column1 p {
+        text-align: justify;
+       }
+
        div.column > h1 {
         font-family: "Bebas Neue", sans-serif;
         font-weight: normal;
@@ -40,23 +54,26 @@
        div.column > p#p1 {
         margin-top: 50px;
        }
+
        ul {
         margin-top: 50px;
         list-style-position: inside;
+        font-family: sans-serif;
+        text-align: justify;
        }
+
        div.column ul > li {
         line-height: 2em;
         font-size: 1em;
        }
        #footer {
         background-color: #00127A;
-        padding: 10px;
+        padding: 5px;
         color: rgba(255, 255, 255, 0.712);
         text-align: center;
         font-size: 0.8em;
-        margin-bottom: -20px;
-        margin-left: -20px;
-        margin-right: -20px;
+        margin-top: 50px;
+        border-radius: 5px;
        }
        strong {
         color: white;
@@ -67,7 +84,9 @@
        select {
         border: none;
         border: solid 1px blue;
-        border-radius: 10px;
+        border-radius: 5px;
+        padding: 10px;
+        outline: 0;
        }
        #txt {
         margin-top: 50px;
@@ -88,12 +107,17 @@
        a {
         color: white;
         text-decoration: none;
+        transition: 0.3s;
        }
        a:hover {
         text-decoration: underline;
-        color: #0025FA;
-        transition-duration: 0.3s;
+        color: rgba(0, 0, 0, 0.584);
        }
+
+       #footer a:hover {
+        color: rgb(10, 137, 235);
+       }
+
        #logo {
         max-width: 300px;
        }
@@ -106,66 +130,56 @@
         #logo {
             max-width: 200px;
         }
-        select {
-            font-size: 10px;
-            max-width: 200px;
-        }
+
        }
        @media (max-width: 600px) {
+
+        main {
+            flex-direction: column;
+        }
+
         #logo {
             max-width: 150px;
         }
-        #h1column2 {
-            font-size: 18px;
-        }
-        #h1column1 {
-            font-size: 20px;
-        }
-        #p1 {
-            font-size: 13px;
-        }
-        #p2 {
-            font-size: 13px;
-        }
-        #ul {
-            font-size: 13px;
+
+       }
+
+       @media (max-width: 390px) {
+        #logo {
+            display: none;
         }
        }
        
     </style>
 </head>
 <body>
-    <div class="column ">
-            <h1 id="h1column1">Bem Vindo(A) a página do suporte</h1>
-            <p  id="p1">Aqui ajudaremos você com alguns problemas ou dúvidas que esteja tendo, nos cursos ou no site.</p>
-            <p id="p2">E se estiver com algum problema ou dúvida desses Abaixo, vamos atende-lo(A) pelo nosso <strong><a href="https://api.whatsapp.com/send/?phone=558187517424&text&type=phone_number&app_absent=0" target="_blank">WhatsApp(+55 81 8751-7424)</a></strong><abbr title="Link Externo">&#x1F517;</abbr>.</p>
-
-            <ul id="ul">
-                <li>Me interessei pelos cursos, como faço minha matrícula ?</li>
-                <li>Não entendi onde fica a Escola.</li>
-                <li>Como posso saber qual o curso certo para mim ?</li>
-                <li>Quero saber os preços da matrícula, mensalidade e se á alguma Taxa ?</li>
-            </ul>
-    
-            <p id="footer">Site criado por <strong><a href="https://www.instagram.com/joao_pauloo333?igsh=MXU4dnd6M3NldjF3OA==" target="_blank">João Paulo</a></strong>, para a <strong><a href="https://www.instagram.com/acessoinformatica10?igsh=ZXMxd3YydTRvdTFj" target="_blank">Acesso Informática</a></strong>. </p>
-
-    </div>
-
-    <div class="column">
-      
-           <img id="logo"  src="logopequena.png" alt="logotipo">
-      
-
-        <h1 id="h1column2" >Selecione aqui sua Dúvida </h1>
-
-        <select name="" id="select">
-            <option  value="opcao1">Onde faço os exercícios de final de modulo ?</option>
-            <option value="opcao2">Tem Campanhas com bonus e promoções ?</option>
-            <option value="opcao3">Aonde fica a Acesso Informática ? </option>
-        </select>
-
-        <div id="txt">Resposta</div>
-    </div>
+    <main>
+        <div class="column column1">
+                <h1 id="h1column1">Bem Vindo(A) a página do suporte</h1>
+                <p  id="p1">Aqui ajudaremos você com alguns problemas ou dúvidas que esteja tendo, nos cursos ou no site.
+                E se estiver com algum problema ou dúvida desses Abaixo, vamos atende-lo(a) pelo nosso <strong><a href="https://api.whatsapp.com/send/?phone=558187517424&text&type=phone_number&app_absent=0" target="_blank">WhatsApp</a></strong><abbr title="Link Externo">&#x1F517;</abbr>.</p>
+                <ul id="ul">
+                    <li>Me interessei pelos cursos, como faço minha matrícula ?</li>
+                    <li>Não entendi onde fica a Escola.</li>
+                    <li>Como posso saber qual o curso certo para mim ?</li>
+                    <li>Quero saber os preços da matrícula, mensalidade e se á alguma Taxa ?</li>
+                </ul>
+        
+                <p id="footer">Site criado por <strong><a href="https://www.instagram.com/joao_pauloo333?igsh=MXU4dnd6M3NldjF3OA==" target="_blank">João Paulo</a></strong>, para a <strong><a href="https://www.instagram.com/acessoinformatica10?igsh=ZXMxd3YydTRvdTFj" target="_blank">Acesso Informática</a></strong>. </p>
+        </div>
+        <div class="column column2">
+        
+               <img id="logo"  src="logopequena.png" alt="logotipo">
+        
+            <h1 id="h1column2" >Selecione aqui sua Dúvida </h1>
+            <select name="" id="select">
+                <option  value="opcao1">Onde faço os exercícios de final de modulo ?</option>
+                <option value="opcao2">Tem Campanhas com bonus e promoções ?</option>
+                <option value="opcao3">Aonde fica a Acesso Informática ? </option>
+            </select>
+            <div id="txt">Resposta</div>
+        </div>
+    </main>
 
     <script>
         var opcoesTextos = {

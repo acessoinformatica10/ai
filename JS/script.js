@@ -1,12 +1,60 @@
 function abrirMenu() {
-    document.getElementById("menu").style.width = "250px";
+    document.getElementById("menu").style.width = "200px";
+    document.getElementById("menu").style.height = "100%"
    
    }
 
    function fecharMenu() {
     document.getElementById("menu").style.width = "0px"
+    document.getElementById("menu").style.height = "0px"
     
    }
+
+   document.addEventListener("scroll", function() {
+    const scrollLeft = document.querySelectorAll(".scroll-left");
+    const scrollRight = document.querySelectorAll(".scroll-right");
+    const scrollRightMenos = document.querySelectorAll(".scroll-rightM");
+    const scrollOpacity = document.querySelectorAll(".scroll-opacity");
+    const scrollTop = document.querySelectorAll(".scroll-top");
+
+    scrollLeft.forEach(scrollLeft => {
+
+        const boxPosition = scrollLeft.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (boxPosition < windowHeight) {
+            scrollLeft.classList.add("scrollLeft");
+        }else {
+            scrollLeft.classList.remove("scrollLeft");
+  }
+    })
+
+    scrollRight.forEach(scrollRight => {
+
+        const boxPosition = scrollRight.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (boxPosition < windowHeight) {
+            scrollRight.classList.add("scrollRight");
+        }else {
+            scrollRight.classList.remove("scrollRight");
+  }
+    })
+
+    scrollTop.forEach(scrollTop => {
+
+        const boxPosition = scrollTop.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (boxPosition < windowHeight) {
+            scrollTop.classList.add("scrollTop");
+        }else {
+            scrollTop.classList.remove("scrollTop");
+  }
+    })
+})
+
+   /*
 
    //visivel o conteudo
 
@@ -34,12 +82,10 @@ function abrirMenu() {
 
    });
 
-   
-
 
    //links nas imgs
 
-   /* var picture = document.getElementsByClassName('picture');
+    var picture = document.getElementsByClassName('picture');
     var imagem = document.getElementsByClassName('imgs');
     var link = document.getElementById('cursos');
 
